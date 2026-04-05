@@ -1,5 +1,5 @@
 name: my first pipeline
-on: push main
+on: push 
 
 jobs:
   build:
@@ -8,6 +8,6 @@ jobs:
      - name: checkout code
        uses: action/checkout@v4
      - name: build image
-       run: docker build -t Mmutoni/ci_portifolio .
+       run: docker build -t ${{secrets.DOCKER_USERNAME}}/ci_portifolio .
      - name: list images
        run: docker images

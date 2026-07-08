@@ -1,0 +1,2 @@
+Building cicd pipeline  of containerized app and pushing 
+the image to ecr and run  a container on it and push it to ecs
